@@ -7,11 +7,11 @@ Spring JDBC is a powerful mechanism to connect to the database and executes the 
     (**Dao** is a design pattern separates the business logic from the data acess logic, making the code more modular and maintainable.)
   - Select operation requires the additional RowMapper Interface and its implemenatation.
     (**RowMapper** is an interface that is used to convert the resultSet into an object.)
-    Two methods are used for selecting objects:
+    Two methods are used for selecting objects:<br>
     (i) For Single Object-
-    public <T> queryForObject(String query, RowMapper<T> rowMapper, Object args)
+    public <T> queryForObject(String query, RowMapper<T> rowMapper, Object args) <br>
     (ii) For multiple Objects-
-    pubic List<T> query(String query, RowMapper<T> rowmMapper)
+    pubic List<T> query(String query, RowMapper<T> rowmMapper)<br>
 - We can configure the bean to use Spring Jdbc concepts by using any of the given method:
   1. By using xml config file
   2. By using Annotations

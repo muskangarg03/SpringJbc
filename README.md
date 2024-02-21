@@ -6,7 +6,7 @@ Spring JDBC is a powerful mechanism to connect to the database and executes the 
   - Insert, Update and Delete operation can be simply performed by creating the Dao Interface and by providing the implementation for it.
     (**Dao** is a design pattern separates the business logic from the data acess logic, making the code more modular and maintainable.)
   - Select operation requires the additional RowMapper Interface and its implemenatation.
-    (**RowMapper** is an interface that is used to convert the resultSet into an object.)
+    (**RowMapper** is an interface that is used to convert the resultSet into an object.) <br>
     Two methods are used for selecting objects:<br>
     (i) For Single Object-
     public <T> queryForObject(String query, RowMapper<T> rowMapper, Object args) <br>
